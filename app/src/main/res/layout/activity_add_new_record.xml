@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNewRecordActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/addNewRecordActivityCountryOrCityNameEditTextId"
+            style="@style/EditTextStyle"
+            android:inputType="textCapWords"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Country/City Name" />
+
+        <EditText
+            android:id="@+id/addNewRecordActivityCurrencyNameEditTextId"
+            style="@style/EditTextStyle"
+            android:inputType="textCapWords"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Currency" />
+
+        <EditText
+            android:id="@+id/addNewRecordActivityDescriptionEditTextId"
+            style="@style/EditTextStyle"
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:hint="Description" />
+
+        <TextView
+            android:text="Please select type from below options:-"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RadioGroup
+            android:id="@+id/addNewRecordActivityRadioGroupId"
+            android:layout_width="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/addNewRecordActivityCountryRadioButtonId"
+                android:text="Country"
+                android:checked="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/addNewRecordActivityCityRadioButtonId"
+                android:text="City"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+        <Button
+            android:id="@+id/addNewRecordActivitySaveButtonId"
+            style="@style/ButtonStyle"
+            android:text="Save"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>

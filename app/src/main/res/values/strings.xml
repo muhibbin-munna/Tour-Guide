@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Tour Guide</string>
+    <string name="welcome_activity_welcome_text">Welcome</string>
+    <string name="welcome_activity_reward_text">In Tour Guide Application.</string>
+</resources>
